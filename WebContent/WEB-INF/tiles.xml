@@ -1,0 +1,32 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="bg" template="/template/bg.jsp">
+		<put-attribute name="title" value="Title" />
+	</definition>
+
+	<definition name="template" extends="bg">
+		<put-attribute name="title" value="Template Example" />
+		<put-attribute name="content"
+			value="/views/template.jsp" />
+	</definition>
+
+	<definition name="standing" extends="bg">
+		<put-attribute name="title" value="Simple Upload" />
+		<put-attribute name="content" value="/views/upload.jsp" />
+	</definition>
+	
+	<definition name="category.index" extends="bg">
+		<put-attribute name="content" value="/views/category/index.jsp" />
+	</definition>
+
+	<definition name="category.add" extends="bg">
+		<put-attribute name="content" value="/views/category/add.jsp" />
+	</definition>
+	
+	<definition name="home.index" extends="bg">
+<put-attribute name="content" value="/views/home/index.jsp" />
+</definition>
+</tiles-definitions>
+
